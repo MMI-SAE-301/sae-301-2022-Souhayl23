@@ -4,6 +4,7 @@
       <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
       menu (dans <code class="font-mono">/src/App.vue</code>)
     </h4>
+    <LoginLougout />
     <ul>
       <li>
         <router-link class="text-red-600 underline" to="/">
@@ -28,4 +29,5 @@
 
 <script setup lang="ts">
 import { Bars3Icon } from "@heroicons/vue/20/solid";
+import LoginLougout from './components/LoginLougout.vue'
 </script>
