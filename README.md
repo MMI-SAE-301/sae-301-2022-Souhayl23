@@ -21,7 +21,7 @@ Vous avez rendu à la racine du projet :
 
 ## R312 | Intégrer ([Pierre Pracht : AC 2401](https://moodle.univ-fcomte.fr/mod/assign/view.php?id=612668))
 
-- Faire un premier commit et donner son lien Github (à remplacer par celui votre premier commit) : [mon premier fait par le prof](https://github.com/MMI-SAE-301/r313-pracht---exemple-configurateur-de-produits-Souhayl23/commit/9a5854a7a64bcf3699e3c8cafa477c377e48ecf6)
+- Faire un premier commit et donner son lien Github (à remplacer par celui votre premier commit) : [mon premier fait par le prof](https://github.com/MMI-SAE-301/sae-301-2022-Souhayl23/commit/e641a14e979c6996076d0733e67fba0d579363d7)
 - Faire un lien vers un fichier du projet (avec numéro de ligne ): [lien demandé](/src/supabase.ts#L12)
   - Faite vous-même un lien vers `/src/App.vue` ligne 21 : [lien fait vous-même](/src/App.vue#L21)
 
