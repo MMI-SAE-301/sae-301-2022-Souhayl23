@@ -4,7 +4,7 @@ import { colors } from "@/types";
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 import MontreSvg from "./MontreSvg.vue";
-
+import FormKitListColors from "./FormKitListColors.vue";
 
 
 const router = useRouter();
@@ -30,7 +30,7 @@ async function upsertMontre(dataForm, node) {
   }
 }
 
-const chaussure = ref<Montre>(props.data ?? {});
+const montres = ref<Montre>(props.data ?? {});
 </script>
 
 <template>
@@ -43,7 +43,7 @@ const chaussure = ref<Montre>(props.data ?? {});
         <div class="carousel w-60">
           <MontreSvg
             class="carousel-item w-60"
-            v-bind="chaussure"
+            v-bind="montres"
             id="montresvg"
           />
         </div>
@@ -51,10 +51,9 @@ const chaussure = ref<Montre>(props.data ?? {});
       <div class="place">
         <FormKit type="form" v-model="montre" @submit="upsertMontre">
               <FormKitListColors name="bracelet" label="bracelet" />
-              <FormKitListColors name="cadran_extérieur" label="cadran_extérieur" />
-              <FormKitListColors name=" cadran_intérieur" label=" cadran_intérieur" />
+              <FormKitListColors name="cadran_extérieur" label="cadran extérieur" />
+              <FormKitListColors name="cadran_intérieur" label="cadran intérieur" />
               <FormKitListColors name="écran" label="écran" />
-              <FormKitListColors name="bande" label="bande" />
 
               <FormKit name="commander" label="commander" type="checkbox" />
               </FormKit>

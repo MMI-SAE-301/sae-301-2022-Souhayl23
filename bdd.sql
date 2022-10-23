@@ -25,13 +25,13 @@ primary key (id) ) ;
 -- code pour la création des policies
 --
 BEGIN;
-  ALTER POLICY "Enable insert for authenticated users only" ON "public"."montre" WITH CHECK (true);
+  ALTER POLICY "Enable insert for authenticated users only" ON "public"."Montre" WITH CHECK (true);
 COMMIT;
 
 BEGIN;
-  ALTER POLICY "Enable read access for all users" ON "public"."montre" USING (true);
+  ALTER POLICY "Enable read access for all users" ON "public"."Montre" USING (true);
 COMMIT;
 
 BEGIN;
-  ALTER POLICY "Enable update for users based on email" ON "public"."montre" WITH CHECK ((uid() IN ( SELECT montre_1.utilisateur AS id_user FROM montre montre_1)));
+  ALTER POLICY "Enable update for users based on email" ON "public"."Montre" WITH CHECK ((uid() IN ( SELECT Montre_1.utilisateur AS id_user FROM Montre Montre_1)));
 COMMIT;
