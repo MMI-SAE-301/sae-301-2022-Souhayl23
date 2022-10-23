@@ -1,11 +1,13 @@
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=8919602&assignment_repo_type=AssignmentRepo)
+
 # code de base pour TP (et future SAE 301)
 
-- **Nom :**
-- **Prénom :**
+- **Nom :SEDIRA
+- **Prénom :Souhayl
 - **URL maquette Figma:**
 - **URL publique du site :**
-- **URL projet Supabase :**
-  - [ ] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
+- **URL projet Supabase :https://app.supabase.com/project/rxgivdfyjsgadlxlytnz
+  - [x] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?
 
 # Auto-évaluation
 
@@ -15,12 +17,13 @@ Vous avez rendu à la racine du projet :
 
 - [ ] Le modèle conceptuel de données (nom : [MCD.png](/MCD.png) ou [MCD.pdf](/MCD.pdf) [^1])
 - [ ] Et compléter le fichier [bdd.sql](/bdd.sql) détaillant le code pour la création des tables, vues et policies créées
-- [ ] Avez-vous bien invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase comme développeur ?
+- [x] Avez-vous bien invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase comme développeur ?
 
 ## R312 | Intégrer ([Pierre Pracht : AC 2401](https://moodle.univ-fcomte.fr/mod/assign/view.php?id=612668))
 
-Pour les liens :
-[vers des fichiers](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes#relative-links-and-image-paths-in-readme-files) ou page d'un commit sur Github.
+- Faire un premier commit et donner son lien Github (à remplacer par celui votre premier commit) : [mon premier fait par le prof](https://github.com/MMI-SAE-301/r313-pracht---exemple-configurateur-de-produits-Souhayl23/commit/9a5854a7a64bcf3699e3c8cafa477c377e48ecf6)
+- Faire un lien vers un fichier du projet (avec numéro de ligne ): [lien demandé](/src/supabase.ts#L12)
+  - Faite vous-même un lien vers `/src/App.vue` ligne 21 : [lien fait vous-même](/src/App.vue#L21)
 
 Noté sur 40.
 
