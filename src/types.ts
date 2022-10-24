@@ -3,6 +3,7 @@ export interface Montre {
   cadran_extérieur?: string;
   cadran_intérieur?: string;
   écran?: string;
+  boitier?: string;
 
 }
 
@@ -19,4 +20,10 @@ export const colors = {
   "#808080": "Gris",
   "#800000": "Marron",
   "#808000": "Olive",
+};
+
+export const boitiers = {
+  "boitier": "rectangle",
+  "boitier rond": "rond",
+
 };

@@ -26,7 +26,7 @@ async function upsertMontre(dataForm, node) {
   if (error) node.setErrors([error.message]);
   else {
     node.setErrors([]);
-    router.push({ name: "montre-edit-id", params: { id: data[0].id } });
+    router.push({ name: "basket-edit-id", params: { id: data[0].id } });
   }
 }
 

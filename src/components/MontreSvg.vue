@@ -1,10 +1,11 @@
 <script setup lang="ts">
     import type { Montre} from "@/types";
    withDefaults(defineProps<Montre>(),{
-    bracelet: "white",
-    cadran_extérieur: "white",
-    cadran_intérieur: "white",
-    écran: "white",
+    bracelet: "#FF0000",
+    cadran_extérieur: "#FFFF00",
+    cadran_intérieur: "black",
+    écran: "#FF0000",
+    boitier: "rectangle",
    })
    </script>
    <template>
@@ -17,5 +18,5 @@
 <rect id="cadran_intérieur" data-name="cadran intérieur" x="63.14" y="156.05" width="341.37" height="402.78" rx="72.17" :fill="cadran_intérieur" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/><rect id="écran" x="82.05" y="172.53" width="303.55" height="369.83" rx="65.21" :fill="écran" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/></g>
 
 <g id="boitier_rond" data-name="boitier rond"><g id="cadran_extérieur-2" data-name="cadran extérieur"><path d="M653.73,637.22a238.06,238.06,0,1,1,168.34-69.73A236.48,236.48,0,0,1,653.73,637.22Z" transform="translate(-415.55 -45.58)" :fill="cadran_extérieur"/><path d="M653.73,161.23a237.21,237.21,0,1,1-92.61,18.7,236.45,236.45,0,0,1,92.61-18.7m0-.25c-131.54,0-238.18,106.64-238.18,238.18S522.19,637.34,653.73,637.34,891.92,530.71,891.92,399.16,785.28,161,653.73,161Z" transform="translate(-415.55 -45.58)"/></g><g id="cadran_intérieur-2" data-name="cadran intérieur"><path d="M653.73,619.54A220.37,220.37,0,1,1,809.57,555,218.94,218.94,0,0,1,653.73,619.54Z" transform="translate(-415.55 -45.58)" :fill="cadran_intérieur"/><path d="M653.73,178.9A219.58,219.58,0,1,1,568,196.21a219,219,0,0,1,85.73-17.31m0-.25c-121.78,0-220.5,98.73-220.5,220.51S532,619.67,653.73,619.67s220.51-98.73,220.51-220.51S775.52,178.65,653.73,178.65Z" transform="translate(-415.55 -45.58)"/></g>
-<circle id="boitier_rond-2" data-name="boitier rond" cx="238.18" cy="353.58" r="194.53" fill="#b3b3b3" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/></g><g id="ecran"><text transform="translate(103.58 329.78)" font-size="98" font-family="ArialMT, Arial" letter-spacing="-0.11em">1O:1O</text><text transform="translate(152.89 222.03)" font-size="30" font-family="ArialMT, Arial" letter-spacing="-0.01em"><tspan xml:space="preserve">Lun.  24 oct.</tspan></text><text transform="translate(178.96 511.45)" font-size="30" font-family="ArialMT, Arial" letter-spacing="-0.01em">TiK•TaK</text><use width="35.92" height="35.92" transform="translate(292.7 396.86) scale(1.22)" xlink:href="#Chargement_4"/><use width="66.17" height="72" transform="translate(132.27 395.79) scale(0.64)" xlink:href="#Orb_-_Gris"/><use width="48" height="48" transform="translate(212.64 394.86)" xlink:href="#Puce_6_-_Gris"/></g></svg>
+<circle id="boitier_rond-2" data-name="boitier rond" cx="238.18" cy="353.58" r="194.53" :fill="écran" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/></g><g id="ecran"><text transform="translate(103.58 329.78)" font-size="98" font-family="ArialMT, Arial" letter-spacing="-0.11em">1O:1O</text><text transform="translate(152.89 222.03)" font-size="30" font-family="ArialMT, Arial" letter-spacing="-0.01em"><tspan xml:space="preserve">Lun.  24 oct.</tspan></text><text transform="translate(178.96 511.45)" font-size="30" font-family="ArialMT, Arial" letter-spacing="-0.01em">TiK•TaK</text><use width="35.92" height="35.92" transform="translate(292.7 396.86) scale(1.22)" xlink:href="#Chargement_4"/><use width="66.17" height="72" transform="translate(132.27 395.79) scale(0.64)" xlink:href="#Orb_-_Gris"/><use width="48" height="48" transform="translate(212.64 394.86)" xlink:href="#Puce_6_-_Gris"/></g></svg>
   </template> 
