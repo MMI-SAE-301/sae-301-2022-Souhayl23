@@ -4,20 +4,21 @@
       <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
       menu (dans <code class="font-mono">/src/App.vue</code>)
     </h4>
-    <LoginLougout />
+    
     <ul>
       <li>
-        <router-link class="text-red-600 underline" to="/">
+        <router-link class="text-red-600 underline" to="/Accueil">
           lien vers
-          <code class="font-mono">/src/pages/index.vue</code>
+          <code class="font-mono">Accueil</code>
         </router-link>
       </li>
       <li>
-        <router-link class="text-red-600 underline" to="/MontreFormView">
+        <router-link class="text-red-600 underline" to="/Personnalisation">
           lien vers
-          <code class="font-mono">MontreFormView</code>
+          <code class="font-mono">Personnalisation</code>
         </router-link>
       </li>
+      <LoginLougout />
     </ul>
   </nav>
 

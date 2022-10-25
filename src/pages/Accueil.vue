@@ -10,9 +10,11 @@ import MontreSvg from "../components/MontreSvg.vue";
 <template>
   <section>
     <h1 class="text-2xl">
-      Montre<code class="font-mono text-base">/src/pages/index.vue</code>
+      Personnaliser votre propre montre connectée
     </h1>
-    <MontreSvg />
+    <img src="../assets/SVG MEDIUM.svg" alt="Montre de taille medium" />
+    <img src="../assets/SVG BIG.svg" alt="Montre de grande taille" />
+
   </section>
   <section v-if="user">
  <h2>
