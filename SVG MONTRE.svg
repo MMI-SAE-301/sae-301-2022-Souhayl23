@@ -1,15 +1,4 @@
-<script setup lang="ts">
-    import type { Montre} from "@/types";
-   withDefaults(defineProps<Montre>(),{
-    bracelet: "white",
-    cadran_extérieur: "white",
-    cadran_intérieur: "white",
-    écran: "white",
-   })
-   </script>
-   <template>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" WI viewBox="0 0 431.82 711.02">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 431.82 711.02">
   <defs>
     <radialGradient id="radial-gradient" cx="1027.95" cy="-22914.37" r="28.95" gradientTransform="translate(-1141.66 5795.64) scale(1.14 0.25)" gradientUnits="userSpaceOnUse">
       <stop offset="0.1" stop-color="#dadada" stop-opacity="0.95"/>
@@ -111,12 +100,12 @@
   <g id="bracelet">
     <path id="bracelet-2" data-name="bracelet" d="M522.37,199.45S561.2,127,556.89,73.36c0,0,17.26-27.53,102.12-27.53s109.3,18.84,109.3,18.84S783,174.81,803.14,195.1c0,0-95.23,18.84-147,18.84S522.37,199.45,522.37,199.45Z" transform="translate(-451.53 -45.58)" :fill="bracelet" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
     <path id="bracelet-3" data-name="bracelet" d="M808.1,607.83s-42,70.91-39.69,124.66c0,0-18.49,26.85-104.24,23.58s-109.74-23-109.74-23S543.79,622.4,524.21,601.35c0,0,96.95-15.15,149.27-13.16S808.1,607.83,808.1,607.83Z" transform="translate(-451.53 -45.58)" :fill="bracelet" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
-    <path id="languette" d="M549.86,129.88l231.12.21L774.59,97.5H556.34Z" transform="translate(-451.53 -45.58)" :fill="cadran_intérieur" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
+    <path id="languette" d="M549.86,129.88l231.12.21L774.59,97.5H556.34Z" transform="translate(-451.53 -45.58)" fill="#fff" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
   </g>
   <g id="boitier">
     <rect id="bouton" x="830.4" y="275.76" width="52.7" height="84.11" rx="18.23" transform="translate(1261.98 590.05) rotate(-180)" :fill="cadran_extérieur" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
-    <rect id="cadran_extérieur" data-name="cadran_extérieur" x="0.25" y="130.63" width="417.08" height="453.62" rx="80.8" :fill="cadran_extérieur" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
-    <rect id="cadran_intérieur" data-name="cadran_intérieur" x="30.77" y="160.05" width="365.67" height="395.81" rx="53.87" :fill="cadran_intérieur" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
+    <rect id="cadran_extérieur" data-name="cadran extérieur" x="0.25" y="130.63" width="417.08" height="453.62" rx="80.8" :fill="cadran_extérieur" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
+    <rect id="cadran_intérieur" data-name="cadran intérieur" x="30.77" y="160.05" width="365.67" height="395.81" rx="53.87" :fill="cadran_intérieur" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
     <rect id="écran" x="50.56" y="180.73" width="323.91" height="353.42" rx="49.68" fill="#030c10" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
     <path id="écran_rond" data-name="écran rond" d="M717.63,403c0,73.06,42.15,134.9,100.26,155.71A49.42,49.42,0,0,0,827,530.05V276a49.42,49.42,0,0,0-9.12-28.67C759.78,268.12,717.63,330,717.63,403Z" transform="translate(-451.53 -45.58)" :fill="écran" stroke="#000" stroke-miterlimit="10" stroke-width="0.5"/>
   </g>
@@ -128,4 +117,4 @@
     <use width="66.17" height="72" transform="translate(80.42 359.05) scale(0.64)" xlink:href="#Orb_-_Gris"/>
     <use width="48" height="48" transform="translate(186.06 355.45)" xlink:href="#Puce_6_-_Gris"/>
   </g>
-</svg></template> 
+</svg>

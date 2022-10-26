@@ -43,7 +43,7 @@ const montres = ref<Montre>(props.data?? {});
         <div class="carousel w-60">
           <MontreSvg
             class="carousel-item w-60"
-            v-bind="montres"
+            v-bind="montre"
             id="montresvg"
           />
         </div>
@@ -55,7 +55,7 @@ const montres = ref<Montre>(props.data?? {});
               <FormKitListColors name="cadran_intérieur" label="cadran intérieur" />
               <FormKitListColors name="écran" label="écran" />
 
-              <FormKit name="commander" label="commander" type="checkbox" />
+              <FormKit name="commander" label="commander" type="button" />
               </FormKit>
       </div>
     </div>

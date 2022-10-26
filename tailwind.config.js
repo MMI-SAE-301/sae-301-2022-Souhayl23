@@ -4,7 +4,31 @@ const formKitTailwind = require("@formkit/themes/tailwindcss");
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+
+        "#47484D":"Gris Matte",
+        "#3F4953":"Bleu Tempête",
+        "#C0CCC8":"Vert Triste",
+        "#EFD5D4":"Rose Pale",
+        "#38A3A5":"Bleu Jade",
+        "#FDCA8B":"Jaune Soleil",
+        'BlancCreme':"#E3DEDA",
+      },
+
+      fontFamily: {
+        fontFamily: {
+          'montserrat': ['Montserrat', 'sans-serif'],
+          'archivo': ['Archivo', 'sans-serif'],
+        },
+
+      },
+      height: {
+        "540" : "533px"
+      }
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),
@@ -14,3 +38,4 @@ module.exports = {
     require("@headlessui/tailwindcss"),
   ],
 };
+
