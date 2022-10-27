@@ -36,20 +36,21 @@ const montres = ref<Montre>(props.data?? {});
 
 <template>
   <div class="css flex justify-center">
-    <div class="flex max-w-full content-center w-[900px] h-[1292px] rounded-[10px]  bg-Blanc gap-20 pl-56 pr-0 p-4" 
+    <div class="flex flex-col max-w-full content-center w-[900px] h-[1200px] rounded-[10px] mb-14 bg-Blanc gap-20 pl-56 pr-0 p-4" 
     style="box-shadow: 7px 7px 4px 0 rgba(0,0,0,0.25);">
       <div class="flex ">
       <div class="flex content-start">
         <div class=" w-60">
           <MontreSvg
-            class=" w-60"
+            class=" w-60 mt-10"
             v-bind="montre"
             id="montresvg"
           />
         </div>
+        
       </div>
       <div class="pl-32">
-        <FormKit type="form" v-model="montre" :submit-attrs="{inputClass: 'flex item-center  justify-center w-[160px] h-[30px] relative pt-1 rounded-[7px] bg-[#38a3a5] text-[16px] font-bold text-center text-[#f7faff]'}" @submit="upsertMontre">
+        <FormKit type="form" v-model="montre"  submit-label="Enregistrer"  :submit-attrs="{inputClass: 'flex item-center  justify-center w-[160px] h-[30px] relative pt-1 rounded-[7px] bg-[#38a3a5] text-[16px] font-bold text-center text-[#f7faff]'}" @submit="upsertMontre">
             <svg
               width="71"
               height="18"
@@ -112,10 +113,51 @@ const montres = ref<Montre>(props.data?? {});
               </FormKit>
               <FormKit name="commander" label="Commander" type="checkbox" />
               </FormKit>
+
+              
+
+              
           
       </div>
+      
     </div>
-   
+    <svg
+  width="450"
+  height="3"
+  viewBox="0 0 1453 3"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+>
+  <line x1="0.961182" y1="1.5" x2="1452.04" y2="1.5" stroke="#000910" stroke-width="2"></line>
+</svg>
+    <p class="w-[500px] h-[467px] text-left text-black">
+  <span class="w-[1209px] h-[467px] text-[20px] font-bold text-left text-[#000910]">
+    Classic Chronograph</span
+  ><br /><br /><span class="w-[1209px] h-[467px] text-[14px] font-thin text-left text-[#000910]">
+    Completez votre style et simplifiez vous la vie avec le modèle Classic Chronograph, la toute
+    dernière version de montre connectée signé TikTak. </span
+  ><br /><br /><span class="w-[1209px] h-[467px] text-[14px] font-thin text-left text-[#000910]">
+    Découvrez nos nouvelles fonctionnalitées: </span
+  ><br /><br /><span class="w-[1209px] h-[467px] text-[14px] font-thin text-left text-[#000910]">
+    . La surface d’affichage du nouvel écran Retina est 1,5 fois plus grande que ce que vous pouvez
+    trouver en marchée. </span
+  ><br /><span class="w-[1209px] h-[467px] text-[14px] font-thin text-left text-[#000910]"> </span
+  ><br /><span class="w-[1209px] h-[467px] text-[14px] font-thin text-left text-[#000910]">
+    . Résistance améliorée Écran plus solide que jamais. Résistance à la poussière et à l'eau </span
+  ><br /><span class="w-[1209px] h-[467px] text-[14px] font-thin text-left text-[#000910]"> </span
+  ><br /><span class="w-[1209px] h-[467px] text-[14px] font-thin text-left text-[#000910]">
+    . Une recharge jusqu’à 40 % plus rapide </span
+  ><br /><span class="w-[1209px] h-[467px] text-[14px] font-thin text-left text-[#000910]"> </span
+  ><br /><span class="w-[1209px] h-[467px] text-[14px] font-thin text-left text-[#000910]">
+    . Une technologie innovante qui prend soin de votre bien-être et de votre sommeil </span
+  ><br /><span class="w-[1209px] h-[467px] text-[14px] font-thin text-left text-[#000910]"> </span
+  ><br /><span class="w-[1209px] h-[467px] text-[14px] font-thin text-left text-[#000910]">
+    . Un design raffiné et efficace pour compléter votre style</span
+  ><br /><span class="w-[1209px] h-[467px] text-[14px] font-thin text-left text-[#000910]"> </span
+  ><br />
+</p>
+
   </div>
   
   </div>

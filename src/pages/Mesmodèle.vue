@@ -24,7 +24,7 @@ const montre = defineProps(["id", "Montre"]);
     <section>
         <div class="flex justify-center flex-col ">
 
-            <div class="flex justify-center py-32"> <h2>
+            <div class="flex justify-center py-10"> <h2>
   <p class="text-[30px] font-bold text-center">
   <span class="text-[30px] font-bold text-center text-[#000910]">Mes </span>
   <span class="text-[30px] font-bold text-center text-[#38a3a5]">modèles </span>
