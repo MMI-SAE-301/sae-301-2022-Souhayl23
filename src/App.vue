@@ -23,8 +23,7 @@
       <router-link to="/Personnalisation" class="block mt-4 lg:inline-block text-[16px] font-bold lg:mt-0 text-teal-lighter hover:text-black mr-4">
         Personnalisation
       </router-link></div>
-      <section v-if="user">
-      </section>
+  
 
       <router-link to="/Connexion"><div
     class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[160px] h-[35px] relative gap-[30px]  py-[15px] rounded-[7px] bg-[#38a3a5]"

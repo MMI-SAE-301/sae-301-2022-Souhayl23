@@ -4,7 +4,7 @@
 
 - **Nom :SEDIRA
 - **Prénom :Souhayl
-- **URL maquette Figma:**
+- **URL maquette Figma:https://www.figma.com/file/Iunr0lV7Njun7MFrXCLiAH/SAE301-Souhayl-Sedira?node-id=19%3A73
 - **URL publique du site :**
 - **URL projet Supabase :https://app.supabase.com/project/rxgivdfyjsgadlxlytnz
   - [x] Avez-vous invité abdallah.makhoul@univ-fcomte.fr dans votre 'Organisation' Supabase ?

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { Montre } from "@/types";
 import { colors } from "@/types";
+import { materiaux } from "@/types";
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 import MontreSvg from "./MontreSvg.vue";
@@ -53,15 +54,27 @@ const montres = ref<Montre>(props.data?? {});
               <FormKitListColors name="cadran_extérieur" label="cadran extérieur" />
               <FormKitListColors name="cadran_intérieur" label="cadran intérieur" />
               <FormKitListColors name="écran" label="écran" />
-              <router-link to="/Mon Compte"><FormKit class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[160px] h-[35px] relative gap-[30px]  py-[15px] rounded-[7px] bg-[#38a3a5]" name="commander" label="commander" type="button" />
-              </FormKit>
-            </router-link>
+              <FormKit label="matériaux" value="#FFFFFF"  type="radio" :options="materiaux" :sections-schema="{
+          inner: {$el: null},  decorator: {$el: null},
+        }" input-class="peer sr-only" options-class="flex gap-1">
+          <template #label="context">
+            <div
+            class="h-6 w-6 rounded-full border-2 peer-checked:border-black"
+            :style="{ backgroundImage: `url('${context.option.value}')`}"
+            />
+            <span class="sr-only">{{ context.option.label}}</span>
 
-          <router-link to="/Connexion"><div
+        </template>
+      </FormKit>
+              <FormKit name="commander" label="commander" type="button" />
+              </FormKit>
+           
+
+          <router-link to="/Mon Compte"><div
     class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[160px] h-[35px] relative gap-[30px]  py-[15px] rounded-[7px] bg-[#38a3a5]"
   >
     <p class="flex-grow-0 flex-shrink-0 text-[16px] font-bold text-center text-[#f7faff]">
-      S'identifier
+      <FormKit name="commander" label="Commander" type="button" />
     </p>
   </div></router-link>
       </div>

@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { createClient } from '@supabase/supabase-js'
 import { SupabaseAuthClient } from '@supabase/supabase-js/dist/module/lib/SupabaseAuthClient'
+import { supabase, user } from '../supabase';
 
 defineProps({
     msg: String
@@ -19,7 +20,16 @@ supabase.auth.onAuthStateChange((event, session) => {
 </script>
 
 <template>
-    
+    <div>
+ <button v-if="user"
+@pointerdown="supabase.auth.signOut()">
+ Se déconnecter ({{user.email}})
+ </button>
+ <button v-else
+@pointerdown="supabase.auth.signIn({provider: 'github'})">
+ Se connecter avec Github
+ </button>
+</div>
 <div class="min-h-screen bg-BlancCreme flex flex-col justify-center sm:py-12">
   <div class="p-10 xs:p-0 mx-auto md:w-full md:max-w-md">
     <h1 class="font-bold text-center text-2xl mb-5">    <svg width="96,66" height="30" viewBox="0 0 116 24" fill="none" xmlns="http://www.w3.org/2000/svg">

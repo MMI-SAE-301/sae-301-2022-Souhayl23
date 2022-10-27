@@ -16,3 +16,14 @@ export const colors = {
   "#FDCA8B": "Jaune Soleil",
   "#E3DEDA": "Blanc Crème",
 };
+
+export const materiaux = [
+  {
+    value: "https://www.pliage-tole.fr/wp-content/uploads/2016/06/nos-pieces-acier.png",
+    label: "Acier",
+  },
+  {
+    value: "https://www.linverse.fr/sites/default/files/styles/blog_full/public/2021-05/article-polyester.png?h=9da7ae08&itok=abVyWYoO",
+    label: "Polyester",
+  },
+];
