@@ -18,20 +18,18 @@
       <router-link to="/" class="block mt-4 lg:inline-block text-[16px] font-bold lg:mt-0 text-teal-lighter hover:text-black mr-4">
         Accueil
       </router-link>
-      <router-link to="#" class="block mt-4 lg:inline-block text-[16px] font-bold lg:mt-0 text-teal-lighter hover:text-black mr-4">Contact</router-link>
+      <router-link to="/Mesmodèle" class="block mt-4 lg:inline-block text-[16px] font-bold lg:mt-0 text-teal-lighter hover:text-black mr-4">Mes modèles</router-link>
     
       <router-link to="/Personnalisation" class="block mt-4 lg:inline-block text-[16px] font-bold lg:mt-0 text-teal-lighter hover:text-black mr-4">
         Personnalisation
       </router-link></div>
-  
 
-      <router-link to="/Connexion"><div
-    class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[160px] h-[35px] relative gap-[30px]  py-[15px] rounded-[7px] bg-[#38a3a5]"
-  >
-    <p class="flex-grow-0 flex-shrink-0 text-[16px] font-bold text-center text-[#f7faff]">
-      S'identifier
-    </p>
-  </div></router-link>
+      <router-link class="flex z-20 justify-center items-center flex-grow-0 flex-shrink-0 w-[160px] h-[35px] relative gap-[30px]  py-[15px] rounded-[7px] bg-[#38a3a5]" to="/Connexion">
+    
+  
+    <p class="z-20 flex-grow-0 flex-shrink-0 text-[16px] font-bold text-center text-[#f7faff]">
+      Mon compte
+    </p></router-link>
   </div>
 </nav>
 
@@ -66,9 +64,6 @@
 <script setup lang="ts">
 import { Bars3Icon } from "@heroicons/vue/20/solid";
 import LoginLougout from './components/LoginLougout.vue'
-import { ref } from 'vue'
-import { createClient } from '@supabase/supabase-js'
-import { SupabaseAuthClient } from '@supabase/supabase-js/dist/module/lib/SupabaseAuthClient'
 </script>
 
 <style>

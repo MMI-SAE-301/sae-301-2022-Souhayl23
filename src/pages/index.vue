@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ListeMontre from "@/components/ListeMontre.vue";
+
 import { user } from "@/supabase";
 import type { Montre } from "@/types";
 import MontreSvg from "../components/MontreSvg.vue";

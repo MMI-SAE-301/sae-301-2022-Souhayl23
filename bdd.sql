@@ -56,3 +56,7 @@ COMMIT;
 BEGIN;
   ALTER POLICY "Enable update for users based on email" ON "public"."Montre" WITH CHECK ((uid() IN ( SELECT Montre_1.utilisateur AS id_user FROM Montre Montre_1)));
 COMMIT;
+
+BEGIN;
+  ALTER POLICY "Enable insert for authenticated users only" ON "public"."Matériaux" WITH CHECK (true);
+COMMIT;

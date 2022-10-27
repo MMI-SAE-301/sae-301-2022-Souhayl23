@@ -20,16 +20,18 @@ supabase.auth.onAuthStateChange((event, session) => {
 </script>
 
 <template>
-    <div>
- <button v-if="user"
+    <div >
+        <div class="flex justify-center py-10"> <h2>
+  <p class="text-[30px] font-bold text-center">
+  <span class="text-[30px] font-bold text-center text-[#000910]">Mon compte </span>
+
+</p></h2> </div>
+ <button v-if="user" class="flex text-[16px] font-bold text-center text-[#f7faff] justify-center items-center flex-grow-0 flex-shrink-0 my-52 mx-auto w-[400px] h-[60px] relative gap-[30px]  py-[15px] rounded-[7px] bg-[#38a3a5]"
 @pointerdown="supabase.auth.signOut()">
  Se déconnecter ({{user.email}})
  </button>
- <button v-else
-@pointerdown="supabase.auth.signIn({provider: 'github'})">
- Se connecter avec Github
- </button>
 </div>
+<div v-if="!user">
 <div class="min-h-screen bg-BlancCreme flex flex-col justify-center sm:py-12">
   <div class="p-10 xs:p-0 mx-auto md:w-full md:max-w-md">
     <h1 class="font-bold text-center text-2xl mb-5">    <svg width="96,66" height="30" viewBox="0 0 116 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,16 +107,16 @@ supabase.auth.onAuthStateChange((event, session) => {
         </div>
       </div>
     </div>
-
+</div>
   </div>
 </div>
 </template>
 
 
 <script>
-const SUPABASE_KEY = 'eeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ4Z2l2ZGZ5anNnYWRseGx5dG56Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjY1NTEzODEsImV4cCI6MTk4MjEyNzM4MX0.FAKCeSkrCgNcrNv95KeBnuxXvXcIz3MC327_hxH3ZFg'
-const SUPABASE_URL = "https://ahlzqgaukrgsgmorgyem.supabase.co"
-const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+//const SUPABASE_KEY = 'eeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ4Z2l2ZGZ5anNnYWRseGx5dG56Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjY1NTEzODEsImV4cCI6MTk4MjEyNzM4MX0.FAKCeSkrCgNcrNv95KeBnuxXvXcIz3MC327_hxH3ZFg'
+//const SUPABASE_URL = "https://ahlzqgaukrgsgmorgyem.supabase.co"
+//const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 export default {
     methods: {
         async logout() {
