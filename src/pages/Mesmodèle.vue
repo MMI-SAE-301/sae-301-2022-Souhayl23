@@ -32,7 +32,7 @@ const montre = defineProps(["id", "Montre"]);
             <div class="w-full flex justify-center">
 
 
-                <div class=" w-7/12 pb-20 m- grid grid-cols-3 pt-16 gap-44 ">
+                <div class=" w-7/12 justify-center pb-20 mr-28 grid grid-cols-3 pt-16 gap-44 ">
                     <div v-for="Liste_Montre in listeMontre" :key="Liste_Montre.id"
                         class="grid grid-cols-3 justify-center">
                         <MontreSvg class="w-64" v-bind="Liste_Montre" />
