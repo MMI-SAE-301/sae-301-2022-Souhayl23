@@ -50,10 +50,11 @@ const montres = ref<Montre>(props.data?? {});
       </div>
       <div class="pl-32">
         <FormKit type="form" v-model="montre" @submit="upsertMontre">
-              <FormKitListColors name="bracelet" label="bracelet" />
-              <FormKitListColors name="cadran_extérieur" label="cadran extérieur" />
-              <FormKitListColors name="cadran_intérieur" label="cadran intérieur" />
-              <FormKitListColors name="écran" label="écran" />
+          <p class="flex-grow-0 flex-shrink-0 text-[20px] font-bold text-left text-[#000910]">Classic Chronograph</p>
+              <FormKitListColors name="bracelet" label="Bracelet" />
+              <FormKitListColors name="cadran_extérieur" label="Cadran extérieur" />
+              <FormKitListColors name="cadran_intérieur" label="Cadran intérieur" />
+              <FormKitListColors name="écran" label="Ecran" />
               <FormKit label="matériaux" value="#FFFFFF"  type="radio" :options="materiaux" :sections-schema="{
           inner: {$el: null},  decorator: {$el: null},
         }" input-class="peer sr-only" options-class="flex gap-1">
@@ -66,11 +67,11 @@ const montres = ref<Montre>(props.data?? {});
 
         </template>
       </FormKit>
-              <FormKit name="commander" label="commander" type="button" />
+              <FormKit name="commander" label="Commander" type="checkbox" />
               </FormKit>
            
 
-          <router-link to="/Mon Compte"><div
+          <router-link to="/Moncompte"><div
     class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[160px] h-[35px] relative gap-[30px]  py-[15px] rounded-[7px] bg-[#38a3a5]"
   >
     <p class="flex-grow-0 flex-shrink-0 text-[16px] font-bold text-center text-[#f7faff]">

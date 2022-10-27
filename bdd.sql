@@ -14,10 +14,31 @@ utilisateur uuid references auth.users
 not null default uid(),
 primary key (id) ) ;
 
+create table Matériaux(
+id_matériaux uuid not null default
+uuid_generate_v4() ,
+libellé varchar,
+URL varchar,
+primary key (id_matériaux) ) ;
 --
 -- code pour la création des vues
 --
+CREATE VIEW allMatériaux as
+SELECT *
+FROM "Matériaux";
 
+create VIEW allAcier as
+select "Montre".*
+from "Matériaux", "Montre"
+where "Matériaux".id_matériaux = "Montre".id_mat
+and "Matériaux"."libellé" = 'Acier';
+
+
+create VIEW allPolyester as
+select "Montre".*
+from "Matériaux", "Montre"
+where "Matériaux".id_matériaux = "Montre".id_mat
+and "Matériaux"."libellé" = 'Polyester';
 
 
 
