@@ -9,13 +9,14 @@ module.exports = {
         transparent: 'transparent',
         current: 'currentColor',
 
-        "#47484D":"Gris Matte",
-        "#3F4953":"Bleu Tempête",
-        "#C0CCC8":"Vert Triste",
-        "#EFD5D4":"Rose Pale",
-        "#38A3A5":"Bleu Jade",
-        "#FDCA8B":"Jaune Soleil",
+        "GrisMatte":"#47484D",
+        "BleuTempête":"#3F4953",
+        "VertTriste":"#C0CCC8",
+        "RosePale":"#EFD5D4",
+        "BleuJade":"#38A3A5",
+        "JauneSoleil":"#FDCA8B",
         'BlancCreme':"#E3DEDA",
+        "Blanc":"#F9F8F6"
       },
 
       fontFamily: {
@@ -27,6 +28,10 @@ module.exports = {
       },
       height: {
         "540" : "533px"
+      },
+      margin: {
+        "540" : "740px",
+        "50%" : "50%"
       }
     },
   },

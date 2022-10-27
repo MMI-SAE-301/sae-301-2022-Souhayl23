@@ -34,31 +34,47 @@ const montres = ref<Montre>(props.data?? {});
 </script>
 
 <template>
-  <div class="css">
-    <div class="flex content-center p-4">
-      <div class="flex content-center">
-        <ul class="flex gap-5">
-          <li><a href="#montresvg">Profil</a></li>
-        </ul>
-        <div class="carousel w-60">
+  <div class="css flex justify-center">
+    <div class="flex max-w-full content-center w-[900px] h-[1292px] rounded-[10px]  bg-Blanc gap-20 pl-56 pr-0 p-4" 
+    style="box-shadow: 7px 7px 4px 0 rgba(0,0,0,0.25);">
+      <div class="flex ">
+      <div class="flex content-start">
+        <div class=" w-60">
           <MontreSvg
-            class="carousel-item w-60"
+            class=" w-60"
             v-bind="montre"
             id="montresvg"
           />
         </div>
       </div>
-      <div class="place">
+      <div class="pl-32">
         <FormKit type="form" v-model="montre" @submit="upsertMontre">
               <FormKitListColors name="bracelet" label="bracelet" />
               <FormKitListColors name="cadran_extérieur" label="cadran extérieur" />
               <FormKitListColors name="cadran_intérieur" label="cadran intérieur" />
               <FormKitListColors name="écran" label="écran" />
-
-              <FormKit name="commander" label="commander" type="button" />
+              <router-link to="/Mon Compte"><FormKit class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[160px] h-[35px] relative gap-[30px]  py-[15px] rounded-[7px] bg-[#38a3a5]" name="commander" label="commander" type="button" />
               </FormKit>
+            </router-link>
+
+          <router-link to="/Connexion"><div
+    class="flex justify-center items-center flex-grow-0 flex-shrink-0 w-[160px] h-[35px] relative gap-[30px]  py-[15px] rounded-[7px] bg-[#38a3a5]"
+  >
+    <p class="flex-grow-0 flex-shrink-0 text-[16px] font-bold text-center text-[#f7faff]">
+      S'identifier
+    </p>
+  </div></router-link>
       </div>
+      
     </div>
+   
+  </div>
+  
   </div>
 </template>
+<style>
+body {background-color:#F9F8F6}
 
+
+
+</style>
